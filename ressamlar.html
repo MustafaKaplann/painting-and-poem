@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/topnavbar.css">
+    <link rel="stylesheet" href="/css/sanatcilar.css">
+    <link rel="stylesheet" href="/css/mobilezone.css">
+
+    <title>Ressamlar</title>
+</head>
+<body>
+                        <!-- ? TOP NAVBAR -->
+    <div class="topnavbar">
+    <ul class="snip1143">
+        <li onclick="yenile()" class="current"><a href="index.html" data-hover="Anasayfa">Anasayfa</a></li>
+        <li><a href="iletisim.html" data-hover="İLETİŞİM">İLETİŞİM</a></li>
+      </ul>
+    </div>
+                        <!-- ? TOP NAVBAR -->
+                        <!--! MOBILE NAVBAR  -->
+  <nav>
+  <div class="navbar_mobile">
+    <div class="container nav-container">
+        <input class="checkbox" type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div> 
+      <div class="menu-items">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="" onclick="yenile()">Ressamlar</a></li>
+        <li><a href="sairler.html">Şairler</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </div>
+    </div>
+  </div>
+  </nav>
+  <!--! MOBILE NAVBAR  -->
+
+<div class="sayfabutunu">
+
+
+<ol class="sanatcilarisirala">
+  <h2 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#d0d0d0; border-bottom: 1px solid white; width: max-content;">RESSAMLAR</h2>
+
+  <li onclick="goNesetGunal()" class="sanatci">
+  <a class="sanatci-link" href="#">
+  <img src="/sanatci-fotoportre/turk-ressam/NesetGunal.jpg" alt="" class="fotoportre-kare">
+  <div class="sanatci-container">
+    <div class="sanatci-hakkinda">
+      <span class="isim">NEŞET GÜNAL</span>
+      <span class="tarih"> | (Türkiye, 1923 - 2002)</span>
+    </div>
+  </div>
+  </a>
+  </li>
+
+  <br>
+
+  <!-- <h2 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:white; border-bottom: 1px solid white; width: max-content;" >YABANCI RESSAMLAR</h2> -->
+  <li onclick="goVanGogh()" class="sanatci">
+    <a class="sanatci-link" href="#">
+    <img src="/sanatci-fotoportre/VincentVanGogh.jpg" alt="" class="fotoportre-kare">
+    <div class="sanatci-container">
+      <div class="sanatci-hakkinda">
+        <span class="isim">VINCENT VAN GOGH</span>
+        <span class="tarih"> | (Hollanda, 1853 - 1890)</span>
+      </div>
+    </div>
+    </a>
+    </li>
+
+
+</ol>
+</div>
+
+<script src="/javascript/main.js"></script>
+
+</body>
+</html>

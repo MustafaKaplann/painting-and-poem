@@ -1,0 +1,188 @@
+.siirkartlari{
+    
+    display:flex;
+    justify-content: center;
+
+    gap: 10vh;
+    margin: 100px;
+    /* justify-content: center; */
+    align-items: center;
+    /* font-size: 2.5em; */
+    /* height: 100vh; */
+    /* max-width: max-content; */
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) -50px -50px 36px -28px inset;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    background: #c1c1c1;
+    padding: 20px;
+    margin: 35px;
+  }
+  
+  .card::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    bottom: 15px;
+    right: 0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg);
+    transition: all 0.1s ease-in;
+  }
+  
+  .card::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    bottom: 15px;
+    left: 0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    transform: rotate(-5deg);
+    transition: all 0.1s ease-in;
+  }
+  
+  .card:hover:before, .card:hover:after {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  .card:hover:before {
+    transform: rotate(-8deg);
+  }
+  
+  .card:hover:after {
+    transform: rotate(8deg);
+  }
+  
+  .card__img {
+    position: relative;
+    /* background: #007c0d;
+    background: linear-gradient(315deg, #68ffc0, #007c0d); */
+    background-image: url("/sanatci-fotoportre/turk-sair/ozdemirasaf.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .card__span {
+    cursor: pointer;
+    font-size: 11px;
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    left: 10px;
+    padding: 3px 7px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease-in;
+    user-select: none;
+  }
+  
+  .card__span:hover {
+    transform: translateX(5px);
+  }
+  
+  .card-int {
+    padding: 20px 0 0 0;
+  }
+  
+  .card-int__title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .card-int__button {
+    cursor: pointer;
+    margin: 20px 0 0 0;
+    padding: 7px 20px;
+    width: 90%;
+    background-color: #d3e6ff;
+    border: none;
+    color: black;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.1s ease-in;
+    user-select: none;
+  }
+  
+  .card-int__button:active {
+    box-shadow: 0px 0px 15px rgba(0, 119, 255, 0.5);
+  }
+  
+  .card-int__button:hover::before {
+    animation: effect_two 0.4s 1;
+  }
+  
+  .card-int__button::before {
+    content: 'Devamını oku!';
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: #007c0d;
+    background: linear-gradient(315deg, #284e80, #ccc);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-99%);
+    z-index: 1;
+    animation: effect_one 10s infinite;
+  }
+  
+  .card-int__button:hover::before {
+    transform: translateX(0%);
+  }
+  
+  .excerpt {
+    font-size: 14px;
+    white-space: pre-line;
+  }
+  
+  @keyframes effect_one {
+    0% {
+      transform: translateX(-99%);
+    }
+  
+    25% {
+      transform: translateX(-90%);
+    }
+  
+    50% {
+      transform: translateX(-80%);
+    }
+  
+    75% {
+      transform: translateX(-95%);
+    }
+  
+    100% {
+      transform: translateX(-99%);
+    }
+  }
+  
+  @keyframes effect_two {
+    to {
+      transform: translateX(-1%);
+    }
+  
+    from {
+      transform: translateX(-99%);
+    }
+  }

@@ -1,0 +1,181 @@
+.yedi-sanat-container{
+    /* background-color: black; */
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.ilk-sanat-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    /* background-color: pink; */
+}
+
+.ilk-sanat-container .ilk-sanat img {
+    object-fit:cover;
+    object-position: center top;
+    width: 1200px;
+    max-height: 100%;
+}
+
+.diger-sanatlar-container {
+    width: 100%;
+    height: 200px;
+    /* background-color: blue; */
+}
+.alt-sanat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 5px; */
+    margin-top: 20px;
+}
+
+.diger-sanatlar-container .alt-sanat .alt-sanat-1 img {
+    width: 190px;
+    height: 190px;
+    object-fit:cover;
+    object-position: center top;
+}
+
+.diger-sanatlar-container .alt-sanat .alt-sanat-2 img {
+    width: 190px;
+    height: 190px;
+    object-fit:cover;
+    object-position: center top;
+}
+.diger-sanatlar-container .alt-sanat .alt-sanat-3 img {
+    width: 190px;
+    height: 190px;
+    object-fit:cover;
+    object-position: center top;
+}
+.diger-sanatlar-container .alt-sanat .alt-sanat-4 img {
+    width: 190px;
+    height: 190px;
+    object-fit:cover;
+    object-position: center top;
+}
+.diger-sanatlar-container .alt-sanat .alt-sanat-5 img {
+    width: 190px;
+    height: 190px;
+    object-fit:cover;
+    object-position: center top;
+}
+.diger-sanatlar-container .alt-sanat .alt-sanat-6 img {
+    width: 190px;
+    height: 190px;
+    object-fit:cover;
+    object-position: center top;
+}
+
+/* .ilk-sanat:hover {
+    filter: brightness(50%);
+    
+}
+
+.bottom-gallery:hover {
+    filter: brightness(50%);
+} */
+
+
+
+.ilk-sanat::before {
+    content: "";
+    position: absolute;
+    width: 1200px;
+    height: 0px;
+    background: linear-gradient(-45deg, #0b000585 0%, #0b000585 100% );
+    transition: all 0.7s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .ilk-sanat:hover::before {
+    height:400px;
+  }
+  
+  .alt-sanat-1::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 0px;
+    background: linear-gradient(-45deg, #0b000585 0%, #0b000585 100% );
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .alt-sanat-1:hover::before {
+    height:190px;
+  }
+  
+  .alt-sanat-2::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 0px;
+    background: linear-gradient(-45deg, #0b000585 0%, #0b000585 100% );
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .alt-sanat-2:hover::before {
+    height:190px;
+  }
+
+  .alt-sanat-3::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 0px;
+    background: linear-gradient(-45deg, #0b000585 0%, #0b000585 100% );
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .alt-sanat-3:hover::before {
+    height:190px;
+  }
+
+
+  .alt-sanat-4::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 0px;
+    background: linear-gradient(-45deg, #0b000585 0%, #0b000585 100% );
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .alt-sanat-4:hover::before {
+    height:190px;
+  }
+
+  .alt-sanat-5::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 0px;
+    background: linear-gradient(-45deg, #0b000585 0%, #0b000585 100% );
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .alt-sanat-5:hover::before {
+    height:190px;
+  }
+
+  .alt-sanat-6::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 0px;
+    background: linear-gradient(-45deg, #0b000585 0%, #0b000585 100% );
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .alt-sanat-6:hover::before {
+    height:190px;
+  }
+
+
+
+  
+  
